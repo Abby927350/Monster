@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog ya Michezo</title>
+    <link rel="stylesheet" href="blog.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Blog ya Michezo</h1>
+    </header>
+
+    <!-- Breaking News Banner -->
+    <div class="breaking-news">
+        <p>⚡ Habari za Haraka: Timu X imechukua ubingwa wa ligi!</p>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sehemu</h2>
+            <ul>
+                <li><a href="homeblog.html">Nyumbani</a></li>
+                <li><a href="#">Habari za Hivi Punde</a></li>
+                <li><a href="#">Matokeo ya Mechi</a></li>
+                <li><a href="#">Vipindi vya Moja kwa Moja</a></li>
+                <li><a href="#">Kuhusu Sisi</a></li>
+                <li><a href="#">Wasiliana Nasi</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <!-- Search Bar -->
+            <form class="search-bar">
+                <input type="text" placeholder="Tafuta habari...">
+                <button type="submit">Tafuta</button>
+            </form>
+
+            <!-- Slideshow -->
+            <div class="slideshow">
+                <div class="slide active">
+                    <img src="picha1.jpg" alt="Habari ya Kwanza">
+                    <p>Habari ya kwanza ya kusisimua kuhusu soka!</p>
+                </div>
+                <div class="slide">
+                    <img src="picha2.jpg" alt="Habari ya Pili">
+                    <p>Mechi kubwa ya leo kati ya timu maarufu.</p>
+                </div>
+            </div>
+
+            <!-- Live Results -->
+            <div class="live-results">
+                <h3>Matokeo ya Moja kwa Moja</h3>
+                <ul>
+                    <li>Timu A 2 - 1 Timu B</li>
+                    <li>Timu C 0 - 0 Timu D</li>
+                </ul>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h3>Maoni</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Andika maoni yako hapa..." required></textarea>
+                    <button type="submit">Tuma</button>
+                </form>
+                <div class="comments-list">
+                    <p><strong>Mgeni:</strong> Hii ni habari nzuri sana!</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Popular Posts Sidebar -->
+        <aside class="popular-posts">
+            <h2>Makala Pendwa</h2>
+            <ul>
+                <li><a href="#">Jinsi ya Kucheza Michezo ya Kubahatisha kwa Mafanikio</a></li>
+                <li><a href="#">Matokeo ya Ligi ya Mabingwa Ulaya</a></li>
+                <li><a href="#">Nyota 5 Wanaotarajiwa Kung'aa Msimu Huu</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Blog ya Michezo. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">Juu</button>
+
+    <script src="blog.js"></script>
+</body>
+</html>

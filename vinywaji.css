@@ -1,0 +1,82 @@
+/* Muundo wa mwili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3; /* Rangi ya nyuma ya ukurasa */
+    background-image: url(https://thumbs.dreamstime.com/z/splashing-fruit-juice-three-glasses-fresh-fruits-illustration-your-design-isolated-white-background-use-312398846.jpg ); /* Ongeza picha ya nyuma */
+    background-size: cover; /* Kufunika ukuta wote na picha */
+    background-position: center; /* Kuweka picha katikati */
+}
+
+/* Jina la tovuti */
+header {
+    background-color: rgba(255, 102, 0, 0.9); /* Rangi ya kichwa */
+    color: white; /* Rangi ya maandiko kwenye kichwa */
+    padding: 10px; /* Punguza zaidi nafasi ya ndani ya kichwa */
+    text-align: center; /* Kuweka maandiko katikati */
+}
+
+header h1 {
+    margin: 0; /* Kuondoa nafasi ya juu na chini */
+    font-size: 1.5em; /* Punguza saizi ya maandiko zaidi */
+}
+
+/* Muundo wa sehemu ya vinywaji */
+.konteina-vinywaji {
+    display: flex; /* Kutumia flexbox kwa kupanga */
+    flex-wrap: wrap; /* Kuweka kadi kwenye safu kadhaa */
+    justify-content: center; /* Kuweka kadi katikati */
+    gap: 20px; /* Nafasi kati ya kadi */
+    padding: 20px; /* Nafasi ya ndani ya kontena */
+    margin-top: 80px; /* Kuongeza nafasi ya juu ili kuhamasisha kadi ziwe mbali na kichwa */
+}
+
+/* Muundo wa kadi moja */
+.drink {
+    width: 300px; /* Upana wa kadi */
+    background-color: #ffffff; /* Rangi ya nyuma ya kadi */
+    border-radius: 8px; /* Kupanua pembe za kadi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kivuli cha kadi */
+    overflow: hidden; /* Kuondoa maudhui yanayovuka mipaka ya kadi */
+    text-align: center; /* Kuweka maandiko katikati */
+    transition: transform 0.3s ease; /* Mabadiliko ya saizi ya kadi */
+}
+
+.drink:hover {
+    transform: scale(1.05); /* Kadi inakua kubwa kidogo unapoinua kipanya juu yake */
+}
+
+.drink img {
+    width: 100%; /* Picha inachukua upana wote wa kadi */
+    height: 200px; /* Kimo cha picha */
+    object-fit: cover; /* Kuweka picha katika muonekano mzuri */
+}
+
+.drink h3 {
+    font-size: 20px; /* Saizi ya jina la juisi */
+    color: #333; /* Rangi ya maandiko ya jina */
+    margin: 10px 0; /* Nafasi ya juu na chini ya jina */
+}
+
+.drink p {
+    font-size: 16px; /* Saizi ya maandiko ya maelezo */
+    color: #555; /* Rangi ya maandiko ya maelezo */
+    padding: 0 10px 10px; /* Nafasi ya ndani ya maelezo */
+}
+
+/* Kitufe cha kadi */
+.drink-btn {
+    display: inline-block; /* Kuonyesha kitufe kama kipande cha block */
+    padding: 10px 20px; /* Nafasi ya ndani ya kitufe */
+    margin: 10px 0; /* Nafasi ya juu na chini ya kitufe */
+    background-color: #ff6600; /* Rangi ya kitufe */
+    color: white; /* Rangi ya maandiko ya kitufe */
+    border-radius: 4px; /* Kupanua pembe za kitufe */
+    text-decoration: none; /* Kuondoa mstari chini ya maandiko */
+    transition: background-color 0.3s ease; /* Mabadiliko ya rangi ya kitufe */
+}
+
+.drink-btn:hover {
+    background-color: #ff4500; /* Rangi mpya ya kitufe unapoinua kipanya juu yake */
+}

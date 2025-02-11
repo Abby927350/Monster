@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyumbani - Chakula Kitamu</title>
+    <link rel="stylesheet" href="chakula2.css">
+    <style>
+        .back-arrow {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .back-arrow:hover {
+            background-color: darkorange;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="back-arrow" onclick="goBack()">&#8592;</button>
+
+    <header>
+        <h1>Chakula Kitamu</h1>
+        <nav>
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Karibu kwenye Chakula Kitamu!</h2>
+        <p>Furahia chakula bora, safi, na kitamu zaidi kwa bei nafuu!</p>
+    </section>
+
+    <section class="popular-menu">
+        <h3>Menu Maarufu</h3>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gEUcVnqahN_BMisisCyMDKILjdV6oJr0uRmuhfug14GJIhOcwkIbAnk&s" alt="GGG" class="food-image">
+            <h4>Pilau Nyama</h4>
+            <p>Pilau Nyama</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGnpqRG01uo_P4Fcup9wKOP4j6M9DDx0IcKWiuI4Oek6Ldq0AgHywYMg&s" alt="Samaki fresh" class="food-image">
+            <h4>Samaki</h4>
+            <p>Matunda mapya na yenye afya kutoka bustani zetu.</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.ytimg.com/vi/2G_fczRF0gE/maxresdefault.jpg" alt="Matunda ya Msimu" class="food-image">
+            <h4>Matunda ya Msimu</h4>
+            <p>Matunda mapya na yenye afya kutoka bustani zetu.</p>
+        </div>
+    </section>
+
+    <section class="order-payment">
+        <h3>Oda na Kulipia</h3>
+        <form action="oda_kulipia.html" method="post">
+            <label for="product">Chagua Bidhaa:</label>
+            <select id="product" name="product">
+                <option value="pilau">Pilau ya Nyama</option>
+                <option value="samaki">Samaki wa Kupaka</option>
+                <option value="matunda">Matunda ya Msimu</option>
+            </select>
+            
+            <label for="quantity">Kiasi:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            <label for="payment-method">Njia ya Malipo:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="mpesa">M-Pesa</option>
+                <option value="tigo-pesa">Tigo Pesa</option>
+                <option value="airtel-money">Airtel Money</option>
+                <option value="cash">Kulipa kwa Fedha Taslimu</option>
+            </select>
+            
+            <button type="submit">Tuma Oda</button>
+            <button type="button" onclick="lipiaSasa()">Lipia Sasa</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chakula Kitamu. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        
+        function lipiaSasa() {
+            alert("Malipo yako yataanza sasa! Tafadhali fuata maagizo ili kukamilisha malipo.");
+        }
+    </script>
+</body>
+</html>

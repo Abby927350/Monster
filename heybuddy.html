@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Design - 12-hour Format</title>
+    <link rel="stylesheet" href="gg.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0./css/line.css">
+</head>
+<body>
+
+    <div class="digital-clock">
+        <div class="time">
+            <span class="hour">08</span> 
+            <span class="dots">:</span> 
+            <span class="minutes">30</span> 
+            <div class="right-side">
+                <span class="period">PM</span>
+                <span class="seconds">20</span>
+            </div>
+        </div>
+        <div class="calender">
+            <span class="month-name">Mar</span>,
+            <span class="day-name">Sunday</span>
+            <span class="day-number">6</span>
+            <span class="year">2024</span>
+        </div>
+    </div>
+
+<script>
+
+    function formatTimeUnit(unit) {
+        return unit < 10 ? "0" + unit : unit;
+    }
+
+    function Clock() {
+        var today = new Date();
+
+        var hour = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+        let period = "AM";
+
+        
+        if (hour >= 12) {
+            period = "PM";
+            if (hour > 12) {
+                hour -= 12; 
+            }
+        } else {
+            period = "AM";
+            if (hour === 0) {
+                hour = 12; 
+            }
+        }
+
+    
+        hour = formatTimeUnit(hour);
+        minutes = formatTimeUnit(minutes);
+        seconds = formatTimeUnit(seconds);
+
+        // Update the clock display
+        document.querySelector('.hour').innerText = hour;
+        document.querySelector('.minutes').innerText = minutes;
+        document.querySelector('.seconds').innerText = seconds;
+        document.querySelector('.period').innerText = period;
+
+        // Update the calendar (optional)
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        
+        var month = months[today.getMonth()];
+        var dayName = days[today.getDay()];
+        var dayNumber = today.getDate();
+        var year = today.getFullYear();
+        
+        document.querySelector('.month-name').innerText = month;
+        document.querySelector('.day-name').innerText = dayName;
+        document.querySelector('.day-number').innerText = dayNumber;
+        document.querySelector('.year').innerText = year;
+    }
+
+    
+    setInterval(Clock, 1000);
+</script>
+</body>
+</html>

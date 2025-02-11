@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    background-color: #f7f7f7; /* Rangi ya msingi ya nyuma */
+    color: #000000; /* Rangi ya maandiko */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #FFA500; /* Rangi ya machungwa */
+}
+
+/* Section Styling */
+section {
+    background-color: #fff; /* Rangi ya nyuma ya sehemu */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading 2 Styling */
+section h2 {
+    color: #FFA500; /* Rangi ya machungwa */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFA500; /* Mstari chini ya kichwa */
+    padding-bottom: 5px;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #000000; /* Rangi ya maandiko */
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    background-color: #fff3e0; /* Rangi nyepesi ya machungwa */
+    border-left: 5px solid #FFA500; /* Rangi ya machungwa */
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #000000; /* Rangi ya maandiko */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #000000; /* Rangi ya maandiko */
+}
+
+footer p {
+    color: #000000; /* Rangi ya maandiko */
+}
+
+/* Picha Styling */
+img {
+    max-width: 100%; /* Hakikisha picha haiwazii zaidi ya eneo la ndani */
+    border-radius: 8px; /* Mipako ya picha kwa pembe za mviringo */
+    margin-top: 10px;
+}
+
+/* Team Member Styling */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Ongeza nafasi kati ya wanachama wa timu */
+}
+
+.team-member img {
+    max-width: 100px; /* Upana wa picha za wanachama wa timu */
+    border-radius: 50%; /* Fanya picha kuwa za mviringo */
+    margin-right: 15px; /* Ongeza nafasi kati ya picha na maelezo */
+}
+
+/* Feedback Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Ongeza nafasi kati ya viwanja */
+}
+
+label {
+    font-weight: bold; /* Kifanya kiandiko cha label kiwe kizito */
+}
+
+input, textarea {
+    padding: 10px; /* Ongeza padding kwenye viwanja */
+    border: 1px solid #ccc; /* Mipaka ya viwanja */
+    border-radius: 5px; /* Mipako ya viwanja */
+}
+
+button {
+    background-color: #FFA500; /* Rangi ya machungwa */
+    color: #fff; /* Rangi ya maandiko */
+    border: none; /* Ondoa mipaka */
+    padding: 10px; /* Ongeza padding */
+    cursor: pointer; /* Fanya kiashiria kuwa kidole kinachoonyesha */
+}
+
+button:hover {
+    background-color: #ff8c00; /* Rangi nyepesi ya machungwa wakati wa kupita juu */
+}
+
+/* Mawasiliano Styling */
+#contact p {
+    margin: 5px 0; /* Punguza nafasi kati ya maelezo ya mawasiliano */
+}
+
+#contact ul {
+    list-style-type: none; /* Ondoa alama za orodha */
+    padding: 0; /* Ondoa padding ya orodha */
+}
+
+#contact ul li {
+    margin: 5px 0; /* Ongeza nafasi kati ya viungo */
+}
+
+/* Viungo Styling */
+a {
+    color: #FFA500; /* Rangi ya machungwa kwa viungo */
+    text-decoration: none; /* Ondoa mistari chini ya viungo */
+}
+
+a:hover {
+    text-decoration: underline; /* Ongeza mistari chini wakati wa kupita juu */
+}

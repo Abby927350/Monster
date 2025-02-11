@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/029/284/163/small/a-front-view-fresh-fruit-cocktails-with-fresh-fruit-slices-ice-cooling-on-blue-drink-juice-co-free-photo.jpg); /* Picha ya nyuma */
+    background-size: cover; /* Funika eneo lote */
+    background-position: center; /* Center picha */
+    background-repeat: no-repeat; /* Usirudie picha */
+}
+
+header {
+    background-color: rgba(255, 165, 0, 0.7); /* Rangi ya orange ya uwazi */
+    color: white;
+    padding: 10px; /* Padding ya chini */
+    text-align: center; /* Center text */
+    position: sticky; /* Sticky header */
+    top: 0; /* Ishike juu */
+    z-index: 1000; /* Iwe juu ya maudhui mengine */
+}
+
+header h1 {
+    font-size: 24px; /* Saizi ya font ya kichwa */
+    margin: 0; /* Ondoa margin ya kawaida */
+}
+
+.nav-menu {
+    list-style-type: none; /* Ondoa orodha ya nukta */
+    padding: 0; /* Ondoa padding ya ndani */
+    display: flex; /* Tumia flexbox kwa mpangilio wa inline */
+    justify-content: center; /* Center align items */
+}
+
+.nav-menu li {
+    margin: 0 10px; /* Margin kati ya vitu */
+}
+
+.nav-menu a {
+    color: white; /* Rangi ya maandiko */
+    text-decoration: none; /* Ondoa underline */
+    padding: 8px; /* Padding ya link */
+    transition: background-color 0.3s; /* Mabadiliko ya laini kwa hover */
+}
+
+.nav-menu a:hover {
+    background-color: darkorange; /* Rangi ya nyuma inapobonyeza */
+}
+
+section {
+    padding: 60px 20px; /* Padding kwa sehemu */
+    background-color: rgba(255, 255, 255, 0.8); /* Rangi nyeupe yenye uwazi */
+    margin: 20px; /* Nafasi kati ya sehemu */
+    border-radius: 8px; /* Pembe zenye mduara */
+}
+
+.about {
+    padding: 40px 20px; /* Padding kuzunguka sehemu ya about */
+    background-color: rgba(255, 255, 255, 0.9); /* Rangi nyeupe yenye uwazi kidogo */
+    margin: 20px auto; /* Kuongeza nafasi ya juu na chini, na ku-center sehemu */
+    border-radius: 8px; /* Mipako yenye pembe za mduara */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Kivuli kidogo kwa kuongeza kina */
+    max-width: 800px; /* Upana wa juu wa sehemu */
+}
+
+.about h2 {
+    font-size: 28px; /* Saizi ya font ya kichwa */
+    margin-bottom: 20px; /* Nafasi kati ya kichwa na maandiko */
+    color: #333; /* Rangi ya maandiko */
+    text-align: center; /* Ku-center maandiko ya kichwa */
+}
+
+.about p {
+    font-size: 16px; /* Saizi ya font kwa maandiko */
+    line-height: 1.6; /* Nafasi kati ya mistari */
+    color: #555; /* Rangi ya maandiko */
+    margin-bottom: 15px; /* Nafasi kati ya paragrafo */
+}
+
+footer {
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding ya chini */
+    background-color: black; /* Rangi ya footer */
+    color: white; /* Rangi ya maandiko ya footer */
+}

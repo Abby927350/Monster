@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif; /* Font ya mwili */
+    background-color: #fff; /* Rangi ya asili ya mwili */
+    color: #000; /* Rangi ya maandiko */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Nafasi kati ya mistari */
+}
+
+h1 {
+    text-align: center; /* Kuweka neno katikati */
+    color: orange; /* Rangi ya kichwa */
+    margin: 20px 0; /* Nafasi ya juu na chini */
+}
+
+.team {
+    display: flex; /* Kuonyesha wanachama wa timu katika safu */
+    flex-wrap: wrap; /* Kupanua safu ya wanachama wa timu */
+    justify-content: center; /* Kuweka wanachama katikati */
+    gap: 20px; /* Nafasi kati ya wanachama wa timu */
+    margin-top: 40px; /* Nafasi ya juu */
+}
+
+.team-member {
+    border: 2px solid orange; /* Mstari wa pembeni wa wanachama wa timu */
+    border-radius: 10px; /* Pembeni zenye mduara */
+    text-align: center; /* Kuweka maandiko katikati */
+    padding: 15px; /* Nafasi ya ndani */
+    background-color: #fff; /* Rangi ya asili ya kila kipengele */
+    width: 220px; /* Upana wa kila mwanachama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mwingiliano wa kivuli */
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px; /* Kimo cha picha */
+    border-radius: 50%; /* Kuweka picha zikiwa na mduara */
+    margin-bottom: 10px; /* Nafasi chini ya picha */
+    display: block; /* Hii inahakikisha picha inakuwa katikati */
+    margin-left: auto; /* Nafasi ya kushoto */
+    margin-right: auto; /* Nafasi ya kulia */
+}
+
+.team-member h3 {
+    margin: 10px 0 5px 0; /* Nafasi ya juu na chini ya jina la mwanachama */
+}
+
+.team-member p {
+    margin: 5px 0; /* Nafasi ya juu na chini ya maandiko */
+}
+
+.team-member a {
+    color: orange; /* Rangi ya viungo vya barua pepe */
+    text-decoration: none; /* Kuondoa mipangilio ya chini */
+}
+
+.team-member a:hover {
+    text-decoration: underline; /* Mipangilio ya chini itakayoonekana unapopitisha cursor */
+}

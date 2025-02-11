@@ -1,0 +1,87 @@
+/* Msingi wa muonekano */
+body {
+    font-family: 'Roboto', sans-serif; /* Badilisha fonti */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Rangi ya nyuma ya ukurasa */
+}
+
+/* Kichwa */
+header {
+    background: #FFA500; /* Orange */
+    color: #000000; /* Black */
+    padding: 20px 0; /* Ongeza padding kwa nafasi zaidi */
+    text-align: center;
+    border-bottom: 5px solid #000000; /* Black border chini ya kichwa */
+}
+
+/* Sehemu kuu */
+main {
+    max-width: 800px; /* Upana wa juu wa sehemu kuu */
+    margin: 20px auto; /* Kuweka katikati */
+    padding: 20px;
+    background: #ffffff; /* Rangi nyeupe kwa sehemu kuu */
+    border-radius: 8px; /* Mzunguko wa pembe */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Kivuli kidogo */
+}
+
+/* Fomu */
+form {
+    display: flex; /* Fomu inatumia flexbox */
+    flex-direction: column; /* Kuweka vipengele vya fomu kwa wima */
+}
+
+/* Viwango vya lebo */
+label {
+    margin: 15px 0 5px; /* Kuongeza nafasi kati ya lebo na viwanja */
+    font-weight: bold; /* Kuongeza ujasiri wa maandiko */
+}
+
+/* Viwanja vya kujaza */
+input, select, textarea {
+    padding: 10px; /* Padding ndani ya viwanja */
+    border: 1px solid #ccc; /* Mstari wa mipaka mwepesi */
+    border-radius: 4px; /* Mzunguko wa pembe */
+    font-size: 16px; /* Saizi ya maandiko */
+}
+
+/* Button ya kuhifadhi */
+button {
+    padding: 10px;
+    background: #000000; /* Black */
+    color: #FFA500; /* Orange */
+    border: none; /* Hakuna mipaka */
+    border-radius: 4px; /* Mzunguko wa pembe */
+    cursor: pointer; /* Mkurugenzi wa kidole */
+    margin-top: 20px; /* Kuongeza nafasi juu ya button */
+    font-size: 18px; /* Saizi ya maandiko */
+    transition: background 0.3s ease; /* Athari ya kupita ya rangi */
+}
+
+button:hover {
+    background: #FF8C00; /* Orange darker kwa athari ya hover */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Kuweka maandiko katikati */
+    padding: 15px 0; /* Padding juu na chini */
+    background: #FFA500; /* Orange */
+    color: #000000; /* Black */
+    border-top: 5px solid #000000; /* Black border juu ya footer */
+    position: relative; /* Kuweka nafasi ya footer */
+    bottom: 0;
+    width: 100%; /* Upana wa footer */
+}
+
+/* Media Query kwa vifaa vidogo */
+@media (max-width: 600px) {
+    main {
+        padding: 10px; /* Kupunguza padding kwenye vifaa vidogo */
+    }
+    
+    button {
+        width: 100%; /* Button inachukua upana wote */
+    }
+}

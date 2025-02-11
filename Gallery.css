@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    color: #000; 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: orange; 
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.gallery-item {
+    border: 2px solid orange; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 200px; 
+    text-align: center; 
+    background-color: #fff; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+.description {
+    padding: 10px; 
+}
+
+h3 {
+    color: orange; 
+}
+
+p {
+    margin: 5px 0; 
+}

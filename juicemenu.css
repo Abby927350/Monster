@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/029/284/163/small/a-front-view-fresh-fruit-cocktails-with-fresh-fruit-slices-ice-cooling-on-blue-drink-juice-co-free-photo.jpg); /* Picha ya mandharinyuma */
+    background-size: cover; /* Kifunika eneo lote */
+    background-position: center; /* Kati ya picha */
+    background-repeat: no-repeat; /* Usirudie picha */
+}
+
+header {
+    background-color: rgba(255, 165, 0, 0.7); /* Rangi ya header */
+    color: white;
+    padding: 50px; /* Padding ya chini */
+    text-align: center; /* Kati ya maandiko */
+    position: sticky; /* Header inashikilia juu */
+    top: 0; /* Inashikilia juu */
+    z-index: 1000; /* Iwe juu ya maudhui mengine */
+    margin-top: 40px; /* Kuongeza nafasi ya juu ya header */
+}
+
+header h1 {
+    font-size: 24px; /* Kichwa cha header */
+    margin: 0; /* Ondoa margin ya default */
+}
+
+.nav-menu {
+    list-style-type: none; /* Orodha isiyo na alama */
+    padding: 0; /* Ondoa padding ya default */
+    display: flex; /* Menyu ya inline */
+    justify-content: center; /* Kati ya viungo */
+}
+
+.menu {
+    padding: 60px 20px; /* Padding ya juu na chini */
+    background-color: rgba(255, 255, 255, 0.9); /* Rangi ya sehemu ya menyu */
+    margin: 20px; /* Margin ya nje */
+    border-radius: 8px; /* Mipaka ya mviringo */
+}
+
+.menu h2 {
+    color: #ff6600; /* Rangi ya kichwa cha menyu */
+}
+
+.menu ul {
+    list-style-type: none; /* Orodha isiyo na alama */
+    padding: 0; /* Ondoa padding ya default */
+}
+
+.menu li {
+    padding: 10px 0; /* Padding ya chini */
+    border-bottom: 1px solid #ddd; /* Mipaka ya chini */
+}
+
+footer {
+    text-align: center; /* Kati ya maandiko */
+    padding: 10px; /* Padding ya chini */
+    background-color: black; /* Rangi ya footer */
+    color: white; /* Rangi ya maandiko ya footer */
+}

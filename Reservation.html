@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hifadhi Nafasi</title>
+    <link rel="stylesheet" href="Reservation.css">
+</head>
+<body>
+    <header>
+        <button style="
+        background-color: orange; /* Button color */
+        color: black; /* Text color */
+        border: none; /* No border */
+        border-radius: 50%; /* Fully rounded */
+        width: 50px; /* Width of the button */
+        height: 50px; /* Height of the button */
+        font-size: 24px; /* Size of the arrow */
+        cursor: pointer; /* Pointer cursor on hover */
+        display: flex; /* Use flex to center align */
+        justify-content: center; /* Center align horizontally */
+        align-items: center; /* Center align vertically */
+        transition: background-color 0.3s; /* Transition for hover effect */
+    " onclick="history.back();"
+    onmouseover="this.style.backgroundColor='darkorange';"
+    onmouseout="this.style.backgroundColor='orange';">
+        &larr; <!-- Left arrow symbol -->
+    </button>
+        <h1>Hifadhi Nafasi</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Fomu ya Hifadhi</h2>
+            <form action="send_reservation.php" method="post">
+                <label for="name">Jina:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Barua Pepe:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Tarehe ya Hifadhi:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Saa ya Hifadhi:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Idadi ya Wageni:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="service">Huduma ya Ziada:</label>
+                <select id="service" name="service">
+                    <option value="">Chagua Huduma</option>
+                    <option value="chakula">Chakula</option>
+                    <option value="vinywaji">Vinywaji</option>
+                    <option value="huduma maalum">Huduma Maalum</option>
+                </select>
+
+                <label for="notes">Maelezo ya Ziada:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <label for="referral">Ulipataje habari za hifadhi?</label>
+                <input type="text" id="referral" name="referral">
+
+                <label for="confirmation">Tathmini uthibitisho wa hifadhi:</label>
+                <input type="checkbox" id="email_confirmation" name="confirmation" value="email">
+                <label for="email_confirmation">Barua pepe</label>
+                <input type="checkbox" id="sms_confirmation" name="confirmation" value="sms">
+                <label for="sms_confirmation">SMS</label>
+
+                <button type="submit">Hifadhi Nafasi</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Mahali Petu</h2>
+            <img src=""> alt="Mahari Petu">
+    </main>
+    <footer>
+        <p>&copy; 2024 Kampuni Yangu. Haki zote zimehifadhiwa.</p>
+    </footer>
+</body>
+</html>

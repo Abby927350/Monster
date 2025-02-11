@@ -1,0 +1,14 @@
+@import url("C:/Users/gemin/OneDrive/Pictures/1.jpg");
+
+*{
+margin: 0px;
+padding: opx;
+box-sizing: border-box;
+font-family: "poppins" ,sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1000vh; 
+}

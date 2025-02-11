@@ -1,0 +1,217 @@
+/* Kuweka msingi wa mwili wa tovuti */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Kuweka Muonekano wa Kichwa cha Tovuti */
+header {
+    background-color: rgba(255, 68, 0, 0.815);
+    color: white;
+    padding:6px 20px;
+    text-align: center;
+    padding: 5;
+}
+
+header h1 {
+    margin: 15;
+    align-items: center;
+    text-align: center;
+    text-decoration: black;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Muonekano wa Sehemu ya Karibu */
+.hero {
+    background-image: url("C:/Users/gemin/OneDrive/Pictures/pzzaaaa.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Muonekano wa Menu Maarufu */
+.popular-menu {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-menu h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.menu-item h4 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Muonekano wa Picha za Vyakula */
+.food-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Muonekano wa Sehemu ya Oda na Kulipia */
+.order-payment {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid #ff9800;
+}
+
+.order-payment h3 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.order-payment form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.order-payment label {
+    font-size: 1em;
+    color: #333;
+}
+
+.order-payment select,
+.order-payment input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.order-payment button {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 1%;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.order-payment button:hover {
+    background-color: #e68900;
+}
+
+/* Mapitio ya Wateja */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 2em;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.testimonials p {
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Muonekano wa Mawasiliano ya Haraka */
+.quick-contact {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.quick-contact h3 {
+    font-size: 2em;
+    color: rgb(255,69,0);
+    margin-bottom: 20px;
+}
+
+.quick-contact p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.quick-contact a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.quick-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Muonekano wa Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("C:/Users/gemin/OneDrive/Pictures/mesmerizing-view-silhouette-tree-savanna-plains-sunset.jpg" ) no-repeat center center/cover;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px; /* Make height equal to width to create a perfect circle */
+    border-radius: 40%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image is cropped evenly */
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+ul li a:hover {
+    color: #5f3434;
+}
+
+.Sub-menu {
+    display: none;
+    position: absolute;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    top: 40px;
+}
+
+ul li:hover .Sub-menu {
+    display: block;
+}
+
+.Sub-menu ul {
+    display: block;
+}
+
+.Sub-menu ul li {
+    margin: 5px 0;
+}
+
+.Sub-menu ul li a {
+    color: #fff;
+}
+
+.title h1 {
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #db093d;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasiliana Nasi</title>
+    <link rel="stylesheet" href="Contact.css"> <!-- Link ya CSS kama unayo -->
+</head>
+
+<body>
+    <button style="
+    background-color: orange; /* Button color */
+    color: black; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Fully rounded */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    font-size: 24px; /* Size of the arrow */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Use flex to center align */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    transition: background-color 0.3s; /* Transition for hover effect */
+" onclick="history.back();"
+onmouseover="this.style.backgroundColor='darkorange';"
+onmouseout="this.style.backgroundColor='orange';">
+    &larr; <!-- Left arrow symbol -->
+</button>
+    <header>
+        <h1>Wasiliana Nasi</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Maelezo ya Mawasiliano</h2>
+            <p>Unaweza kutufikia kupitia njia zifuatazo:</p>
+            <ul>
+                <li>Simu: +255 123 456 789</li>
+                <li>Barua Pepe: info@example.com</li>
+                <li>Anwani: Mtaa wa Nne, Jiji, Nchi</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Fomu ya Mawasiliano</h2>
+            <form action="send_message.php" method="post">
+                <label for="name">Jina:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Barua Pepe:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ujumbe:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Tuma Ujumbe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kampuni Yangu. Haki zote zimehifadhiwa.</p>
+    </footer>
+</body>
+</html>

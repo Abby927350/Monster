@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en" dir="1tr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widh=device-widh, initial-scale=1.0">
+    <title>Digital Clock Design I widh 12-hour/ 24-hour format switcher - Html, Css & Javascript</title>
+    <link rel="stylesheet" href="ibrahcode.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0./css/line.css">
+</head>
+<body>
+
+    <div class="digital-clock">
+    <div class="time">
+     <span class="hour">08</span> 
+     <span class="dots">:</span> 
+     <span class="minutes">30</span> 
+     <div class="right-side">
+     <span class="period">PM</span>
+     <span class="seconds">20</span>
+     </div>
+    </div>
+    <div class="calender">
+    <span class="month-name">Mar</span>,
+    <span class="day-name">Sunday</span>
+    <span class="day-number">6</span>
+    <span class="year">2024</span>
+
+    </div>
+    </div>
+<script>
+   function Clock(){
+    var today= new date();
+
+    var hour = today.gethours();
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
+    let period ="AM";
+
+    document.querySelector(".hours")+ innerHTML = hours;
+    document.querySelector(".minutes")
+    document.querySelector(".seconds")
+    document.querySelector(.period)
+
+
+   } 
+</script>
+</body>
+ </html>

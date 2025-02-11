@@ -1,0 +1,160 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  header {
+    background: #ff6600; /* Orange color */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #000; /* Black on hover */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url(https://i.ytimg.com/vi/rX0bgfQl-NE/sddefault.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #e65c00; /* Darker orange */
+  }
+  
+  /* Carousel Section */
+  .carousel {
+    padding: 50px 20px;
+    background: #111;
+    text-align: center;
+  }
+  
+  .carousel h2 {
+    margin-bottom: 20px;
+    color: #ff6600;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .prev-btn, .next-btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6600; /* Orange color on hover */
+  }
+  

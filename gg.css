@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400');
+
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/621/6/339/spider-man-homecoming-2017-marvel-cinematic-universe-spider-man-wallpaper-thumb.jpg); /* Picha yako itakuwa hapa */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.digital-clock{
+    position: relative;
+    color: #fff;
+    background: rgba(45, 47, 65, 0.7); /* Semi-transparent background kwa ajili ya kusoma vizuri */
+    width: 425px;
+    padding: 20px 45px;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour, .dots, .minutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 125px;
+}
+
+.hour,  .minutes{
+    font-size: 6.5em;
+    width: 125px;
+}
+
+.dots{
+    font-size: 5em;
+    color: #929292;
+}
+
+.hour{
+    background: linear-gradient(90deg, #634dff, #5fd4ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.minutes{
+    background: linear-gradient(90deg, #ff5e9a, #ffb960);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.right-side{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.period, .second{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.period{
+    transform: translateY(-20px);
+    background: linear-gradient(90deg, #f7b63f, #faf879);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.second{
+    transform: translateY(16px);
+    background: linear-gradient(90deg, #24ff6d, #2f93f1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #ae4af6, #ff98d1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.day-name, .day-number, .year{
+    margin: 8px;
+}

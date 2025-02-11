@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;
+    color: #333;
+}
+
+header.hero {
+    background-image: url(https://image-tc.galaxy.tf/wijpeg-ej4ngv5vexgh4qqo80hxdc1z/serenaserengeti-56-1.jpg?width=1600&height=1066);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+header.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+header.hero .cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+header.hero .cta:hover {
+    background-color: #e65c00;
+}
+
+nav.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.navbar ul li {
+    margin: 0 2rem;
+}
+
+nav.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav.navbar ul li a:hover {
+    color: #ff6600;
+}
+
+section#menu {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+section#menu h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.menu-item img {
+    max-width: 150px;
+    margin-right: 2rem;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 1.6rem;
+    color: #ff6600;
+}
+
+.menu-item p {
+    font-size: 1rem;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-button i {
+    font-size: 1.5rem;
+}
+
+.back-button:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}

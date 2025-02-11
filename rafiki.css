@@ -1,0 +1,134 @@
+/* Muundo wa jumla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Muundo wa header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  header .logo h1 {
+    font-size: 24px;
+  }
+  
+  /* Sehemu ya picha ya mandhari */
+  .hero {
+    background-image: url(https://savoteur.com/wp-content/uploads/2023/03/People-having-dinner-shutterstock-MSN.jpg); /* Badilisha na picha ya mandhari ya nje */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 40px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  /* Sehemu ya huduma zetu */
+  .services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .services .service-item {
+    flex: 1;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .services .service-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .services .service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .services h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sehemu ya menu ya chakula na vinywaji */
+  .menu {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .menu h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 22%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Muundo wa footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  

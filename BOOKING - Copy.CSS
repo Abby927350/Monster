@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #000000; /* Black kabisa */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.booking-form {
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menyu ya Chakula na Vinywaji</title>
+    <link rel="stylesheet" href="Menu.css"> <!-- Unganisha na CSS -->
+    <style>
+        .back-arrow {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: orange;
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .back-arrow:hover {
+            background-color: darkorange;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kitufe cha kurudi nyuma -->
+    <button class="back-arrow" onclick="goBack()">&#8592;</button>
+
+    <header>
+        <h1>Menyu ya Chakula na Vinywaji</h1>
+    </header>
+    
+    <section id="menu">
+        <h2>Vyakula vya Asubuhi</h2>
+        <ul>
+            <li>Chapati - TZS 500</li>
+            <li>Mahindi Chemsha - TZS 300</li>
+            <li>Ndizi na Mayai - TZS 700</li>
+            <li>Toast na Jam - TZS 400</li>
+            <li>Uji wa Wimbi - TZS 600</li>
+        </ul>
+
+        <h2>Vyakula vya Mchana</h2>
+        <ul>
+            <li>Pilau ya Nyama - TZS 1500</li>
+            <li>Wali na Maharage - TZS 1000</li>
+            <li>Samaki na Ugali - TZS 2000</li>
+            <li>Supu ya Kuku - TZS 800</li>
+            <li>Spaghetti ya Nyama - TZS 1200</li>
+        </ul>
+
+        <h2>Vyakula vya Usiku</h2>
+        <ul>
+            <li>Mchemsho wa Ndizi na Nyama - TZS 1800</li>
+            <li>Ugali na Kuku - TZS 2500</li>
+            <li>Kachumbari - TZS 500</li>
+            <li>Chipsi na Nyama - TZS 2000</li>
+            <li>Saladi ya Veggie - TZS 700</li>
+        </ul>
+
+        <h2>Vinywaji</h2>
+        <ul>
+            <li>Maji - TZS 200</li>
+            <li>Juisi ya Mmachungwa - TZS 800</li>
+            <li>Chai - TZS 300</li>
+            <li>Kahawa - TZS 500</li>
+            <li>Soda - TZS 600</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Mgahawa Wetu</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

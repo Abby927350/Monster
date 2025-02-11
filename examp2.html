@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #FF4500; /* Orange */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: -250px; /* Hidden by default */
+            width: 250px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent */
+            transition: left 0.3s ease;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            padding: 15px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700; /* Gold */
+        }
+
+        .menu-btn {
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            background: none;
+            border: none;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        main {
+            padding: 20px;
+            margin-left: 250px; /* Adjust for sidebar */
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <h1>Live Football Streaming</h1>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#live">Live Matches</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="live">
+            <h2>Live Matches</h2>
+            <iframe src="https://123goal.to/match/fc-barcelona-vs-rcd-espanyol.dj2ryoh1eooeq1z?c=6725ba306709083faf95e3bf&s=1" allowfullscreen></iframe>
+        </section>
+        <section id="schedule">
+            <h2>Match Schedule</h2>
+            <ul>
+                <li>Match 1: Date & Time</li>
+                <li>Match 2: Date & Time</li>
+                <li>Match 3: Date & Time</li>
+            </ul>
+        </section>
+        <section id="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>Summary of the article...</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Football Streaming. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.left = sidebar.style.left === '0px' ? '-250px' : '0px';
+        }
+    </script>
+</body>
+</html>

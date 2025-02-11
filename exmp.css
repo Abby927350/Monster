@@ -1,0 +1,83 @@
+/* General input styles */
+input {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Specific input types */
+
+/* Button */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Checkbox and Radio */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin: 5px 10px;
+}
+
+/* Color Picker */
+input[type="color"] {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Date and Time Pickers */
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"] {
+    width: auto;
+    padding: 8px;
+}
+
+/* Number and Range */
+input[type="number"],
+input[type="range"] {
+    width: 100px;
+}
+
+/* File */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Text, Email, Password, Search, Tel, and URL */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hidden */
+input[type="hidden"] {
+    display: none;
+}

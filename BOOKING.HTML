@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Vinywaji na Chakula</title>
+    <link rel="stylesheet" href="BOOKING.css">
+</head>
+<body>
+    <header>
+        <h1>Booking ya Vinywaji na Chakula</h1>
+    </header>
+
+    <!-- Button ya kurudi nyuma -->
+    <button id="goBackBtn" onclick="goBack()" style="margin-left: 20px;">Rudi Nyuma</button>
+
+    <section class="booking-form">
+        <h2>Jaza Fomu ya Booking</h2>
+        <form id="bookingForm">
+            <label for="name">Jina la Mteja:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Namba ya Simu:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="drinks">Vinywaji:</label>
+            <select id="drinks" name="drinks">
+                <option value="Juice ya Matunda">Juice ya Matunda</option>
+                <option value="Kahawa">Kahawa</option>
+                <option value="Tea">Tea</option>
+            </select>
+
+            <label for="food">Chakula:</label>
+            <select id="food" name="food">
+                <option value="Nyama Choma">Nyama Choma</option>
+                <option value="Rice na Kuku">Rice na Kuku</option>
+                <option value="Chapati na Mchuzi">Chapati na Mchuzi</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Samaki">Samaki</option>
+                <option value="Baga">Baga</option>
+                <option value="Sambusa">Sambusa</option>
+                <option value="Supu">Supu</option>
+                <option value="Nyama ya Mbuzi">Nyama ya Mbuzi</option>
+                <option value="Chips">Chips</option>
+                <option value="Pilau">Pilau</option>
+                <option value="Karimati">Karimati</option>
+            </select>
+
+            <label for="date">Tarehe na Wakati:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <button type="submit">Wasilisha Booking</button>
+        </form>
+
+        <div id="confirmationMessage" style="display:none;">
+            <h3>Asante! Tumepokea booking yako:</h3>
+            <p id="confirmationDetails"></p>
+            <button onclick="goBack()">Rudi Nyuma</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vinywaji na Chakula. All rights reserved.</p>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
